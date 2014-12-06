@@ -7,17 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "DreamStore.h"
+#import "DreamsTableViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
+
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    // Switch to record view controller if the local notif/alarm went off
+    // If notif not set far enough in advance it automatically switches
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    tabBarController.selectedViewController = [tabBarController.viewControllers objectAtIndex:1];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -28,6 +39,15 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    BOOL success = [[DreamStore sharedStore]saveChanges];
+    
+    if (success) {
+        NSLog(@"Saved all of the Dreams");
+    } else {
+        NSLog(@"Could not save any Dreams");
+    }
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

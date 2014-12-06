@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		7E5CC3C91A2D2CDE004F53E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3C81A2D2CDE004F53E3 /* main.m */; };
 		7E5CC3CC1A2D2CDE004F53E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3CB1A2D2CDE004F53E3 /* AppDelegate.m */; };
-		7E5CC3CF1A2D2CDE004F53E3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3CE1A2D2CDE004F53E3 /* FirstViewController.m */; };
-		7E5CC3D21A2D2CDE004F53E3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D11A2D2CDE004F53E3 /* SecondViewController.m */; };
+		7E5CC3CF1A2D2CDE004F53E3 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3CE1A2D2CDE004F53E3 /* AlarmViewController.m */; };
+		7E5CC3D21A2D2CDE004F53E3 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */; };
 		7E5CC3D51A2D2CDE004F53E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D31A2D2CDE004F53E3 /* Main.storyboard */; };
 		7E5CC3D71A2D2CDE004F53E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */; };
 		7E5CC3DA1A2D2CDE004F53E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D81A2D2CDE004F53E3 /* LaunchScreen.xib */; };
 		7E5CC3E61A2D2CDE004F53E3 /* DreamClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3E51A2D2CDE004F53E3 /* DreamClockTests.m */; };
+		7E5CC3F81A2D3208004F53E3 /* DreamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */; };
+		7E5CC3FC1A2DB316004F53E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5CC3FB1A2DB316004F53E3 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7ED3DA061A2E79A000B43EE0 /* Dream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3DA051A2E79A000B43EE0 /* Dream.m */; };
+		7ED3DA091A2E79BD00B43EE0 /* DreamStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */; };
+		7EDB6C041A312A5A007962AB /* alarmSound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB6C031A312A5A007962AB /* alarmSound2.caf */; };
+		7EDB6C0A1A323848007962AB /* alarmSound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB6C091A323848007962AB /* alarmSound1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +39,25 @@
 		7E5CC3C81A2D2CDE004F53E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E5CC3CA1A2D2CDE004F53E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E5CC3CB1A2D2CDE004F53E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7E5CC3CD1A2D2CDE004F53E3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		7E5CC3CE1A2D2CDE004F53E3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		7E5CC3D01A2D2CDE004F53E3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		7E5CC3D11A2D2CDE004F53E3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7E5CC3CD1A2D2CDE004F53E3 /* AlarmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		7E5CC3CE1A2D2CDE004F53E3 /* AlarmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		7E5CC3D01A2D2CDE004F53E3 /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		7E5CC3D41A2D2CDE004F53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7E5CC3D91A2D2CDE004F53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7E5CC3DF1A2D2CDE004F53E3 /* DreamClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5CC3E41A2D2CDE004F53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5CC3E51A2D2CDE004F53E3 /* DreamClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamClockTests.m; sourceTree = "<group>"; };
+		7E5CC3F61A2D3207004F53E3 /* DreamsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DreamsTableViewController.h; sourceTree = "<group>"; };
+		7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DreamsTableViewController.m; sourceTree = "<group>"; };
+		7E5CC3FB1A2DB316004F53E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7ED3DA041A2E79A000B43EE0 /* Dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dream.h; sourceTree = "<group>"; };
+		7ED3DA051A2E79A000B43EE0 /* Dream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dream.m; sourceTree = "<group>"; };
+		7ED3DA071A2E79BD00B43EE0 /* DreamStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DreamStore.h; sourceTree = "<group>"; };
+		7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DreamStore.m; sourceTree = "<group>"; };
+		7EDB6C031A312A5A007962AB /* alarmSound2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound2.caf; sourceTree = "<group>"; };
+		7EDB6C091A323848007962AB /* alarmSound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound1.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5CC3FC1A2DB316004F53E3 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +82,7 @@
 		7E5CC3BA1A2D2CDE004F53E3 = {
 			isa = PBXGroup;
 			children = (
+				7E5CC3FB1A2DB316004F53E3 /* AVFoundation.framework */,
 				7E5CC3C51A2D2CDE004F53E3 /* DreamClock */,
 				7E5CC3E21A2D2CDE004F53E3 /* DreamClockTests */,
 				7E5CC3C41A2D2CDE004F53E3 /* Products */,
@@ -86,11 +103,17 @@
 			children = (
 				7E5CC3CA1A2D2CDE004F53E3 /* AppDelegate.h */,
 				7E5CC3CB1A2D2CDE004F53E3 /* AppDelegate.m */,
-				7E5CC3CD1A2D2CDE004F53E3 /* FirstViewController.h */,
-				7E5CC3CE1A2D2CDE004F53E3 /* FirstViewController.m */,
-				7E5CC3D01A2D2CDE004F53E3 /* SecondViewController.h */,
-				7E5CC3D11A2D2CDE004F53E3 /* SecondViewController.m */,
 				7E5CC3D31A2D2CDE004F53E3 /* Main.storyboard */,
+				7E5CC3CD1A2D2CDE004F53E3 /* AlarmViewController.h */,
+				7E5CC3CE1A2D2CDE004F53E3 /* AlarmViewController.m */,
+				7E5CC3D01A2D2CDE004F53E3 /* RecordViewController.h */,
+				7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */,
+				7E5CC3F61A2D3207004F53E3 /* DreamsTableViewController.h */,
+				7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */,
+				7ED3DA041A2E79A000B43EE0 /* Dream.h */,
+				7ED3DA051A2E79A000B43EE0 /* Dream.m */,
+				7ED3DA071A2E79BD00B43EE0 /* DreamStore.h */,
+				7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */,
 				7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */,
 				7E5CC3D81A2D2CDE004F53E3 /* LaunchScreen.xib */,
 				7E5CC3C61A2D2CDE004F53E3 /* Supporting Files */,
@@ -102,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				7E5CC3C71A2D2CDE004F53E3 /* Info.plist */,
+				7EDB6C091A323848007962AB /* alarmSound1.caf */,
+				7EDB6C031A312A5A007962AB /* alarmSound2.caf */,
 				7E5CC3C81A2D2CDE004F53E3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -173,9 +198,11 @@
 				TargetAttributes = {
 					7E5CC3C21A2D2CDE004F53E3 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9LEUPX2VHX;
 					};
 					7E5CC3DE1A2D2CDE004F53E3 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9LEUPX2VHX;
 						TestTargetID = 7E5CC3C21A2D2CDE004F53E3;
 					};
 				};
@@ -207,6 +234,8 @@
 				7E5CC3D51A2D2CDE004F53E3 /* Main.storyboard in Resources */,
 				7E5CC3DA1A2D2CDE004F53E3 /* LaunchScreen.xib in Resources */,
 				7E5CC3D71A2D2CDE004F53E3 /* Images.xcassets in Resources */,
+				7EDB6C041A312A5A007962AB /* alarmSound2.caf in Resources */,
+				7EDB6C0A1A323848007962AB /* alarmSound1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5CC3D21A2D2CDE004F53E3 /* SecondViewController.m in Sources */,
+				7E5CC3D21A2D2CDE004F53E3 /* RecordViewController.m in Sources */,
+				7E5CC3F81A2D3208004F53E3 /* DreamsTableViewController.m in Sources */,
 				7E5CC3CC1A2D2CDE004F53E3 /* AppDelegate.m in Sources */,
-				7E5CC3CF1A2D2CDE004F53E3 /* FirstViewController.m in Sources */,
+				7ED3DA091A2E79BD00B43EE0 /* DreamStore.m in Sources */,
+				7ED3DA061A2E79A000B43EE0 /* Dream.m in Sources */,
+				7E5CC3CF1A2D2CDE004F53E3 /* AlarmViewController.m in Sources */,
 				7E5CC3C91A2D2CDE004F53E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +401,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -380,6 +414,7 @@
 				INFOPLIST_FILE = DreamClockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamClock.app/DreamClock";
 			};
 			name = Debug;
@@ -388,6 +423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -395,6 +432,7 @@
 				INFOPLIST_FILE = DreamClockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamClock.app/DreamClock";
 			};
 			name = Release;
@@ -418,6 +456,7 @@
 				7E5CC3EB1A2D2CDE004F53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E5CC3EC1A2D2CDE004F53E3 /* Build configuration list for PBXNativeTarget "DreamClockTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +465,7 @@
 				7E5CC3EE1A2D2CDE004F53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
