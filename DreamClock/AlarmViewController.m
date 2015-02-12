@@ -1,5 +1,5 @@
 //
-//  FirstViewController.m
+//  AlarmViewController.m
 //  DreamClock
 //
 //  Created by Thomas Thornton on 12/1/14.
@@ -19,7 +19,7 @@
 
 @implementation AlarmViewController
 
-@synthesize setAlarmsButton, cancelAlarmsButton, previewButton1, previewButton2;
+@synthesize setAlarmsButton, cancelAlarmsButton, previewButton1, previewButton2, datePicker;
 
 - (IBAction)setAlarms:(id)sender {
     
@@ -73,6 +73,8 @@
         [setAlarmsButton setEnabled:NO];
         [cancelAlarmsButton setEnabled:YES];
         
+        [datePicker setUserInteractionEnabled:NO];
+        
     }
 }
 
@@ -83,6 +85,8 @@
     
     [setAlarmsButton setEnabled:YES];
     [cancelAlarmsButton setEnabled:NO];
+    
+    [datePicker setUserInteractionEnabled:YES];
     
 }
 
@@ -106,6 +110,10 @@
     } else {
         
         [player stop];
+        
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setActive:NO error:nil];
+        
         [previewButton1 setTitle:@"Preview" forState:UIControlStateNormal];
         [previewButton2 setEnabled:YES];
         
@@ -133,6 +141,10 @@
     } else {
         
         [player stop];
+        
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setActive:NO error:nil];
+        
         [previewButton2 setTitle:@"Preview" forState:UIControlStateNormal];
         [previewButton1 setEnabled:YES];
         
@@ -142,6 +154,9 @@
 
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
     
+    [previewButton1 setTitle:@"Preview" forState:UIControlStateNormal];
+    [previewButton2 setTitle:@"Preview" forState:UIControlStateNormal];
+    
     [previewButton1 setEnabled:YES];
     [previewButton2 setEnabled:YES];
     
@@ -150,7 +165,7 @@
 - (IBAction)helpTapped:(id)sender {
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DreamClock"
-                                                    message:@"DreamClock works with two phases of alarms. \n\nWake Up Phase 1 - Dream Reflection:  While laying in bed, listen to the spoken instructions. Think back and become aware of the dreams that filled your mind while you slept.\n\nWake Up Phase 2 - Dream Recording: Unlock your iPhone, tap record, and talk about the dreams you rememered. Closing your eyes while speaking can help with dream recollection."
+                                                    message:@"DreamClock works with two phases of alarms. Make sure that your phone is not on vibrate, and it's at a high enough volume. \n\nWake Up Phase 1 (3 minutes before selected time) - Dream Reflection:  While laying in bed, listen to the spoken instructions. Think back and become aware of the dreams that filled your mind while you slept.\n\nWake Up Phase 2 (at selected time) - Dream Recording: Unlock your iPhone, tap record, and talk about the dreams you rememered. Closing your eyes while speaking can help with dream recollection."
                                                    delegate:self
                                           cancelButtonTitle:nil
                                           otherButtonTitles:@"OK", nil];
@@ -163,6 +178,27 @@
     
     [super viewDidLoad];
     
+    // Set up the audio session
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    
+    NSError *error;
+    
+    BOOL success = [session overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:&error];
+    if(!success)
+    
+    {
+        NSLog(@"error doing outputaudioportoverride - %@", [error localizedDescription]);
+    }
+    
+    BOOL anotherLaunch = [[NSUserDefaults standardUserDefaults]boolForKey:@"anotherLaunch"];
+    if (!anotherLaunch) {
+        
+        [self helpTapped:self];
+        [[NSUserDefaults standardUserDefaults]setBool:TRUE forKey:@"anotherLaunch"];
+        
+    }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -173,15 +209,15 @@
         
         [setAlarmsButton setEnabled:YES];
         [cancelAlarmsButton setEnabled:NO];
+        [datePicker setUserInteractionEnabled:YES];
         
     } else {
         
         [setAlarmsButton setEnabled:NO];
         [cancelAlarmsButton setEnabled:YES];
+        [datePicker setUserInteractionEnabled:NO];
         
     }
-    
-    [super viewWillAppear:animated];
     
     self.datePicker.datePickerMode = UIDatePickerModeTime;
     
@@ -189,6 +225,8 @@
     [previewButton2 setEnabled:YES];
     [previewButton1 setTitle:@"Preview" forState:UIControlStateNormal];
     [previewButton2 setTitle:@"Preview" forState:UIControlStateNormal];
+    
+    [super viewWillAppear:animated];
     
 }
 
@@ -206,6 +244,10 @@
         [audioSession setActive:NO error:nil];
         
     }
+    
+//    player = nil;
+    
+    
 }
 
 @end

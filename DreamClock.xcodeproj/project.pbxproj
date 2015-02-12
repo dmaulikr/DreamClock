@@ -7,20 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E13B3581A428EF900301389 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3571A428EF900301389 /* Launch Screen.xib */; };
+		7E13B36B1A42D20500301389 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3601A42D20500301389 /* Contents.json */; };
+		7E13B36C1A42D20500301389 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3611A42D20500301389 /* Icon-40.png */; };
+		7E13B36D1A42D20500301389 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3621A42D20500301389 /* Icon-40@2x.png */; };
+		7E13B36E1A42D20500301389 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3631A42D20500301389 /* Icon-40@3x.png */; };
+		7E13B36F1A42D20500301389 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3641A42D20500301389 /* Icon-60@2x.png */; };
+		7E13B3701A42D20500301389 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3651A42D20500301389 /* Icon-60@3x.png */; };
+		7E13B3711A42D20500301389 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3661A42D20500301389 /* Icon-76.png */; };
+		7E13B3721A42D20500301389 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3671A42D20500301389 /* Icon-76@2x.png */; };
+		7E13B3731A42D20500301389 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3681A42D20500301389 /* Icon-Small.png */; };
+		7E13B3741A42D20500301389 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3691A42D20500301389 /* Icon-Small@2x.png */; };
+		7E13B3751A42D20500301389 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B36A1A42D20500301389 /* Icon-Small@3x.png */; };
+		7E13B37F1A42D22A00301389 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3761A42D22A00301389 /* Icon-60.png */; };
+		7E13B3801A42D22A00301389 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3771A42D22A00301389 /* Icon-72.png */; };
+		7E13B3811A42D22A00301389 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3781A42D22A00301389 /* Icon-72@2x.png */; };
+		7E13B3821A42D22A00301389 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B3791A42D22A00301389 /* Icon-Small-50.png */; };
+		7E13B3831A42D22A00301389 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B37A1A42D22A00301389 /* Icon-Small-50@2x.png */; };
+		7E13B3841A42D22A00301389 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B37B1A42D22A00301389 /* Icon.png */; };
+		7E13B3851A42D22A00301389 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B37C1A42D22A00301389 /* Icon@2x.png */; };
+		7E13B3861A42D22A00301389 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B37D1A42D22A00301389 /* iTunesArtwork.png */; };
+		7E13B3871A42D22A00301389 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B37E1A42D22A00301389 /* iTunesArtwork@2x.png */; };
+		7E3EBF191A66472500B99826 /* alarmSound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EBF181A66472500B99826 /* alarmSound1.caf */; };
+		7E3EBF1A1A66472500B99826 /* alarmSound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EBF181A66472500B99826 /* alarmSound1.caf */; };
 		7E5CC3C91A2D2CDE004F53E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3C81A2D2CDE004F53E3 /* main.m */; };
 		7E5CC3CC1A2D2CDE004F53E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3CB1A2D2CDE004F53E3 /* AppDelegate.m */; };
 		7E5CC3CF1A2D2CDE004F53E3 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3CE1A2D2CDE004F53E3 /* AlarmViewController.m */; };
 		7E5CC3D21A2D2CDE004F53E3 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */; };
 		7E5CC3D51A2D2CDE004F53E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D31A2D2CDE004F53E3 /* Main.storyboard */; };
 		7E5CC3D71A2D2CDE004F53E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */; };
-		7E5CC3DA1A2D2CDE004F53E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CC3D81A2D2CDE004F53E3 /* LaunchScreen.xib */; };
 		7E5CC3E61A2D2CDE004F53E3 /* DreamClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3E51A2D2CDE004F53E3 /* DreamClockTests.m */; };
 		7E5CC3F81A2D3208004F53E3 /* DreamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */; };
 		7E5CC3FC1A2DB316004F53E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5CC3FB1A2DB316004F53E3 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7E96F0011A435E1600A96B37 /* rsz_3triangle-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E96F0001A435E1600A96B37 /* rsz_3triangle-512.png */; };
 		7ED3DA061A2E79A000B43EE0 /* Dream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3DA051A2E79A000B43EE0 /* Dream.m */; };
 		7ED3DA091A2E79BD00B43EE0 /* DreamStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */; };
 		7EDB6C041A312A5A007962AB /* alarmSound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB6C031A312A5A007962AB /* alarmSound2.caf */; };
-		7EDB6C0A1A323848007962AB /* alarmSound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB6C091A323848007962AB /* alarmSound1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +56,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E13B3571A428EF900301389 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		7E13B3601A42D20500301389 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7E13B3611A42D20500301389 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		7E13B3621A42D20500301389 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		7E13B3631A42D20500301389 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		7E13B3641A42D20500301389 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		7E13B3651A42D20500301389 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		7E13B3661A42D20500301389 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		7E13B3671A42D20500301389 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		7E13B3681A42D20500301389 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		7E13B3691A42D20500301389 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7E13B36A1A42D20500301389 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		7E13B3761A42D22A00301389 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		7E13B3771A42D22A00301389 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7E13B3781A42D22A00301389 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		7E13B3791A42D22A00301389 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		7E13B37A1A42D22A00301389 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		7E13B37B1A42D22A00301389 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7E13B37C1A42D22A00301389 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7E13B37D1A42D22A00301389 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		7E13B37E1A42D22A00301389 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		7E3EBF181A66472500B99826 /* alarmSound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound1.caf; sourceTree = "<group>"; };
 		7E5CC3C31A2D2CDE004F53E3 /* DreamClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5CC3C71A2D2CDE004F53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5CC3C81A2D2CDE004F53E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,19 +89,18 @@
 		7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		7E5CC3D41A2D2CDE004F53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7E5CC3D91A2D2CDE004F53E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7E5CC3DF1A2D2CDE004F53E3 /* DreamClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5CC3E41A2D2CDE004F53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5CC3E51A2D2CDE004F53E3 /* DreamClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamClockTests.m; sourceTree = "<group>"; };
 		7E5CC3F61A2D3207004F53E3 /* DreamsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DreamsTableViewController.h; sourceTree = "<group>"; };
 		7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DreamsTableViewController.m; sourceTree = "<group>"; };
 		7E5CC3FB1A2DB316004F53E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7E96F0001A435E1600A96B37 /* rsz_3triangle-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsz_3triangle-512.png"; sourceTree = "<group>"; };
 		7ED3DA041A2E79A000B43EE0 /* Dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dream.h; sourceTree = "<group>"; };
 		7ED3DA051A2E79A000B43EE0 /* Dream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dream.m; sourceTree = "<group>"; };
 		7ED3DA071A2E79BD00B43EE0 /* DreamStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DreamStore.h; sourceTree = "<group>"; };
 		7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DreamStore.m; sourceTree = "<group>"; };
 		7EDB6C031A312A5A007962AB /* alarmSound2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound2.caf; sourceTree = "<group>"; };
-		7EDB6C091A323848007962AB /* alarmSound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound1.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +122,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E13B35F1A42D20500301389 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7E13B3601A42D20500301389 /* Contents.json */,
+				7E96F0001A435E1600A96B37 /* rsz_3triangle-512.png */,
+				7E13B3611A42D20500301389 /* Icon-40.png */,
+				7E13B3621A42D20500301389 /* Icon-40@2x.png */,
+				7E13B3631A42D20500301389 /* Icon-40@3x.png */,
+				7E13B3641A42D20500301389 /* Icon-60@2x.png */,
+				7E13B3651A42D20500301389 /* Icon-60@3x.png */,
+				7E13B3661A42D20500301389 /* Icon-76.png */,
+				7E13B3671A42D20500301389 /* Icon-76@2x.png */,
+				7E13B3681A42D20500301389 /* Icon-Small.png */,
+				7E13B3691A42D20500301389 /* Icon-Small@2x.png */,
+				7E13B36A1A42D20500301389 /* Icon-Small@3x.png */,
+				7E13B3761A42D22A00301389 /* Icon-60.png */,
+				7E13B3771A42D22A00301389 /* Icon-72.png */,
+				7E13B3781A42D22A00301389 /* Icon-72@2x.png */,
+				7E13B3791A42D22A00301389 /* Icon-Small-50.png */,
+				7E13B37A1A42D22A00301389 /* Icon-Small-50@2x.png */,
+				7E13B37B1A42D22A00301389 /* Icon.png */,
+				7E13B37C1A42D22A00301389 /* Icon@2x.png */,
+				7E13B37D1A42D22A00301389 /* iTunesArtwork.png */,
+				7E13B37E1A42D22A00301389 /* iTunesArtwork@2x.png */,
+			);
+			name = Icons;
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		7E5CC3BA1A2D2CDE004F53E3 = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +182,12 @@
 				7E5CC3D11A2D2CDE004F53E3 /* RecordViewController.m */,
 				7E5CC3F61A2D3207004F53E3 /* DreamsTableViewController.h */,
 				7E5CC3F71A2D3208004F53E3 /* DreamsTableViewController.m */,
+				7E13B3571A428EF900301389 /* Launch Screen.xib */,
 				7ED3DA041A2E79A000B43EE0 /* Dream.h */,
 				7ED3DA051A2E79A000B43EE0 /* Dream.m */,
 				7ED3DA071A2E79BD00B43EE0 /* DreamStore.h */,
 				7ED3DA081A2E79BD00B43EE0 /* DreamStore.m */,
 				7E5CC3D61A2D2CDE004F53E3 /* Images.xcassets */,
-				7E5CC3D81A2D2CDE004F53E3 /* LaunchScreen.xib */,
 				7E5CC3C61A2D2CDE004F53E3 /* Supporting Files */,
 			);
 			path = DreamClock;
@@ -124,8 +196,9 @@
 		7E5CC3C61A2D2CDE004F53E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E13B35F1A42D20500301389 /* Icons */,
 				7E5CC3C71A2D2CDE004F53E3 /* Info.plist */,
-				7EDB6C091A323848007962AB /* alarmSound1.caf */,
+				7E3EBF181A66472500B99826 /* alarmSound1.caf */,
 				7EDB6C031A312A5A007962AB /* alarmSound2.caf */,
 				7E5CC3C81A2D2CDE004F53E3 /* main.m */,
 			);
@@ -231,11 +304,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E13B3701A42D20500301389 /* Icon-60@3x.png in Resources */,
+				7E13B3851A42D22A00301389 /* Icon@2x.png in Resources */,
+				7E13B3711A42D20500301389 /* Icon-76.png in Resources */,
+				7E13B3811A42D22A00301389 /* Icon-72@2x.png in Resources */,
+				7E96F0011A435E1600A96B37 /* rsz_3triangle-512.png in Resources */,
+				7E13B36C1A42D20500301389 /* Icon-40.png in Resources */,
 				7E5CC3D51A2D2CDE004F53E3 /* Main.storyboard in Resources */,
-				7E5CC3DA1A2D2CDE004F53E3 /* LaunchScreen.xib in Resources */,
+				7E13B3721A42D20500301389 /* Icon-76@2x.png in Resources */,
+				7E13B36D1A42D20500301389 /* Icon-40@2x.png in Resources */,
+				7E3EBF191A66472500B99826 /* alarmSound1.caf in Resources */,
+				7E13B36F1A42D20500301389 /* Icon-60@2x.png in Resources */,
+				7E13B3841A42D22A00301389 /* Icon.png in Resources */,
+				7E13B3731A42D20500301389 /* Icon-Small.png in Resources */,
+				7E13B3831A42D22A00301389 /* Icon-Small-50@2x.png in Resources */,
+				7E13B3751A42D20500301389 /* Icon-Small@3x.png in Resources */,
+				7E13B36E1A42D20500301389 /* Icon-40@3x.png in Resources */,
 				7E5CC3D71A2D2CDE004F53E3 /* Images.xcassets in Resources */,
+				7E13B3801A42D22A00301389 /* Icon-72.png in Resources */,
 				7EDB6C041A312A5A007962AB /* alarmSound2.caf in Resources */,
-				7EDB6C0A1A323848007962AB /* alarmSound1.caf in Resources */,
+				7E13B3821A42D22A00301389 /* Icon-Small-50.png in Resources */,
+				7E13B37F1A42D22A00301389 /* Icon-60.png in Resources */,
+				7E13B3741A42D20500301389 /* Icon-Small@2x.png in Resources */,
+				7E13B3581A428EF900301389 /* Launch Screen.xib in Resources */,
+				7E13B3871A42D22A00301389 /* iTunesArtwork@2x.png in Resources */,
+				7E13B3861A42D22A00301389 /* iTunesArtwork.png in Resources */,
+				7E13B36B1A42D20500301389 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3EBF1A1A66472500B99826 /* alarmSound1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +385,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7E5CC3D81A2D2CDE004F53E3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E5CC3D91A2D2CDE004F53E3 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -318,7 +405,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -338,6 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -359,7 +448,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -372,6 +462,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -381,9 +472,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
 				INFOPLIST_FILE = DreamClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
 			};
 			name = Debug;
 		};
@@ -391,9 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
 				INFOPLIST_FILE = DreamClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
 			};
 			name = Release;
 		};
@@ -437,6 +536,75 @@
 			};
 			name = Release;
 		};
+		7E96F0021A436B4200A96B37 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		7E96F0031A436B4200A96B37 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thomas Thornton (9LEUPX2VHX)";
+				INFOPLIST_FILE = DreamClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c8707ad1-baee-43e4-a3e9-64aa8b05404e";
+			};
+			name = Distribution;
+		};
+		7E96F0041A436B4200A96B37 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DreamClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamClock.app/DreamClock";
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +613,7 @@
 			buildConfigurations = (
 				7E5CC3E71A2D2CDE004F53E3 /* Debug */,
 				7E5CC3E81A2D2CDE004F53E3 /* Release */,
+				7E96F0021A436B4200A96B37 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -454,6 +623,7 @@
 			buildConfigurations = (
 				7E5CC3EA1A2D2CDE004F53E3 /* Debug */,
 				7E5CC3EB1A2D2CDE004F53E3 /* Release */,
+				7E96F0031A436B4200A96B37 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -463,6 +633,7 @@
 			buildConfigurations = (
 				7E5CC3ED1A2D2CDE004F53E3 /* Debug */,
 				7E5CC3EE1A2D2CDE004F53E3 /* Release */,
+				7E96F0041A436B4200A96B37 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

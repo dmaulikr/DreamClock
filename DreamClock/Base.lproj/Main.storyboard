@@ -23,7 +23,7 @@
                                     <!--2014-12-01 23:57:28 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-dJ-KAM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-dJ-KAM">
                                 <rect key="frame" x="263" y="463" width="75" height="30"/>
                                 <state key="normal" title="Set Alarms">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,19 +32,19 @@
                                     <action selector="setAlarms:" destination="9pv-A4-QxB" eventType="touchUpInside" id="QSL-EN-ngM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phase 2 Alarm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-7r-ePy">
-                                <rect key="frame" x="356" y="90" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phase 2 Alarm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-7r-ePy">
+                                <rect key="frame" x="462" y="90" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phase 1 Alarm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-Rd-WsD">
-                                <rect key="frame" x="132" y="90" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phase 1 Alarm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-Rd-WsD">
+                                <rect key="frame" x="26" y="90" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-oQ-UUm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-oQ-UUm">
                                 <rect key="frame" x="250" y="501" width="100" height="30"/>
                                 <state key="normal" title="Cancel Alarms">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,8 +53,8 @@
                                     <action selector="cancelAlarms:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Wfe-bm-sLA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgP-te-Spf">
-                                <rect key="frame" x="161" y="119" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgP-te-Spf">
+                                <rect key="frame" x="26" y="119" width="54" height="30"/>
                                 <state key="normal" title="Preview">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -72,8 +72,8 @@
                                     <action selector="helpTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Th0-TC-gpT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sST-Eh-1tM">
-                                <rect key="frame" x="385" y="119" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sST-Eh-1tM">
+                                <rect key="frame" x="520" y="119" width="54" height="30"/>
                                 <state key="normal" title="Preview">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -128,8 +128,8 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-9M-4cQ">
-                                    <rect key="frame" x="263" y="18" width="30" height="30"/>
-                                    <state key="normal" title="Edit">
+                                    <rect key="frame" x="272" y="18" width="57" height="30"/>
+                                    <state key="normal" title="Rename">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
@@ -137,7 +137,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJ6-F4-Vd8">
-                                    <rect key="frame" x="361" y="18" width="44" height="30"/>
+                                    <rect key="frame" x="379" y="18" width="44" height="30"/>
                                     <state key="normal" title="Delete">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -146,7 +146,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-F5-oMt">
-                                    <rect key="frame" x="159" y="18" width="30" height="30"/>
+                                    <rect key="frame" x="192" y="18" width="30" height="30"/>
                                     <state key="normal" title="Play">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -185,7 +185,7 @@
                             <outlet property="delegate" destination="IQR-gM-vie" id="ZQf-hV-wsa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Dreams" image="first" id="SGi-wM-WWg"/>
+                    <tabBarItem key="tabBarItem" title="Dreams" image="third" id="SGi-wM-WWg"/>
                     <connections>
                         <outlet property="deleteButton" destination="oJ6-F4-Vd8" id="azy-i0-j7m"/>
                         <outlet property="editButton" destination="MsW-9M-4cQ" id="mAx-KA-zeY"/>
@@ -214,16 +214,16 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playTapped:" destination="4Nw-L8-lE0" eventType="touchUpInside" id="pwM-cu-37l"/>
+                                    <action selector="playTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="L31-L7-UxG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M51-rd-Q8c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M51-rd-Q8c">
                                 <rect key="frame" x="275" y="210" width="50" height="30"/>
                                 <state key="normal" title="Record">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="recordTapped:" destination="4Nw-L8-lE0" eventType="touchUpInside" id="Jon-4G-w14"/>
+                                    <action selector="recordTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ltk-QR-5Gl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-4z-FOv">
@@ -232,7 +232,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopTapped:" destination="4Nw-L8-lE0" eventType="touchUpInside" id="YMg-73-aa5"/>
+                                    <action selector="stopTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="yAg-je-Nwu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -282,5 +282,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="third" width="28" height="28"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.m
+//  RecordViewController.h
 //  DreamClock
 //
 //  Created by Thomas Thornton on 12/1/14.
@@ -16,7 +16,6 @@
     AVAudioPlayer *player;
     
     NSDate *lastDate;
-    NSTimeInterval thisDuration;
     
 }
 
@@ -36,13 +35,18 @@
     
     if (!recorder.recording) {
         
-        NSLog(@"recorder url %@", recorder.url);
+        //NSLog(@"recorder url %@", recorder.url);
 
         AVAudioSession *session = [AVAudioSession sharedInstance];
         [session setActive:YES error:nil];
         
         // Start recording
         [recorder record];
+        
+        if (recorder.recording) {
+            NSLog(@"recorder is recording");
+        }
+        
         [recordButton setTitle:@"Pause" forState:UIControlStateNormal];
         
         // Keeping track of record time
@@ -54,10 +58,6 @@
         [recorder pause];
         [recordButton setTitle:@"Record" forState:UIControlStateNormal];
         
-        // Keeping track of record time
-        thisDuration = thisDuration - [lastDate timeIntervalSinceNow];
-        NSLog(@"%f", thisDuration);
-        
     }
     
     [stopButton setEnabled:YES];
@@ -66,14 +66,6 @@
 }
 
 - (IBAction)stopTapped:(id)sender {
-    
-    if (recorder.recording) {
-        
-        // Keeping track of record time
-        thisDuration = thisDuration - [lastDate timeIntervalSinceNow];
-        NSLog(@"%f", thisDuration);
-        
-    }
     
     [recorder stop];
     
@@ -88,6 +80,7 @@
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     UITextField *textField = [alert textFieldAtIndex:0];
     textField.text = @"Untitled Dream";
+    
     [alert show];
     
 }
@@ -96,18 +89,22 @@
     
     NSString *name = [alertView textFieldAtIndex:0].text;
     
-    [[DreamStore sharedStore]createDreamWithName:name duration:[NSNumber numberWithDouble:thisDuration] audioData:[NSData dataWithContentsOfURL:recorder.url]];
+    AVURLAsset *thisasset = [AVURLAsset assetWithURL:recorder.url];
     
-    thisDuration = 0.0;
-
+    [[DreamStore sharedStore]createDreamWithName:name duration:[NSNumber numberWithDouble:CMTimeGetSeconds(thisasset.duration)] audioData:[NSData dataWithContentsOfURL:recorder.url]];
+    
 }
 
 - (IBAction)playTapped:(id)sender {
     
     if (!recorder.recording) {
         
+        //NSLog(@"play tapped, recorder not recording, url is %@", recorder.url);
+        
         player = [[AVAudioPlayer alloc]initWithContentsOfURL:recorder.url error:nil];
+        
         [player setDelegate:self];
+        [player prepareToPlay];
         [player play];
         
     }
@@ -115,9 +112,19 @@
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
     
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession setActive:NO error:nil];
+    
     [recordButton setTitle:@"Record" forState:UIControlStateNormal];
     [stopButton setEnabled:NO];
     [playButton setEnabled:YES];
+    
+}
+
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    [audioSession setActive:NO error:nil];
     
 }
 
@@ -134,16 +141,13 @@
     
     NSURL *outputFileUrl = [NSURL fileURLWithPathComponents:pathComponents];
     
-    // Set up the audio session
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setCategory:AVAudioSessionCategoryRecord error:nil];
-    
     // Define the recorder setting
     NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc]init];
     
     [recordSetting setValue:[NSNumber numberWithInt:kAudioFormatMPEG4AAC] forKey:AVFormatIDKey];
     [recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
     [recordSetting setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
+//    [recordSetting setValue:[NSNumber numberWithInt:16] forKey:AVEncoderBitRateKey];
     
     // Initiate and prepare the recorder
     recorder = [[AVAudioRecorder alloc]initWithURL:outputFileUrl settings:recordSetting error:nil];
@@ -151,18 +155,25 @@
     recorder.meteringEnabled = YES;
     [recorder prepareToRecord];
     
+    
+    
+    
+    
+    // DO NOT SET UP ANOTHER AUDIO SESSION : Set up the audio session
+    //    AVAudioSession *session = [AVAudioSession sharedInstance];
+    //    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
+    NSLog(@"will dissapear recording view");
     
     if (recorder.recording) {
-        thisDuration = thisDuration - [lastDate timeIntervalSinceNow];
-        
         [recorder stop];
         
-        [[DreamStore sharedStore]createDreamWithName:@"Untitled Dream" duration:[NSNumber numberWithDouble:thisDuration] audioData:[NSData dataWithContentsOfURL:recorder.url]];
-
-        thisDuration = 0.0;
+        AVURLAsset *thisasset = [AVURLAsset assetWithURL:recorder.url];
+        
+        [[DreamStore sharedStore]createDreamWithName:@"Untitled Dream" duration:[NSNumber numberWithDouble:CMTimeGetSeconds(thisasset.duration)] audioData:[NSData dataWithContentsOfURL:recorder.url]];
         
     } else if (player.playing) {
         
@@ -174,6 +185,22 @@
     [audioSession setActive:NO error:nil];
     
     [super viewWillDisappear:YES];
+
+    
+    
+    
+    //    recorder = nil;
+    //    player = nil;
+    
+    //    [recordButton setEnabled:YES];
+    //    [recordButton setTitle:@"Record" forState:UIControlStateNormal];
+    //
+    //    [stopButton setEnabled:NO];
+    //    [playButton setEnabled:NO];
+    
+//    NSLog(@"is it here");
+//    BOOL success = [audioSession setActive:NO error:nil];
+//    NSLog(success ? @"Success!" : @"Not a sucess!");
     
 }
 

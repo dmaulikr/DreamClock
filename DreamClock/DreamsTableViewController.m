@@ -15,6 +15,7 @@
     AVAudioPlayer *player;
     NSIndexPath *dreamIndexPath;
     BOOL beenSelected;
+
 }
 
 @end
@@ -25,12 +26,16 @@
 @synthesize playButton, editButton;
 
 -(IBAction)playTapped:(id)sender{
+    
     if (beenSelected == true) {
+        
         if (!player.playing) {
+            
             NSArray *dreams = [[DreamStore sharedStore]allDreams];
             Dream *dream = dreams[dreamIndexPath.row];
             
             player = [[AVAudioPlayer alloc]initWithData:dream.audioData error:nil];
+            
             [player setDelegate:self];
             [player play];
             
@@ -39,6 +44,10 @@
         } else {
             
             [player stop];
+            
+            AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+            [audioSession setActive:NO error:nil];
+            
             [playButton setTitle:@"Play" forState:UIControlStateNormal];
             
         }
@@ -46,9 +55,14 @@
 }
 
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-   
+    
     [playButton setTitle:@"Play" forState:UIControlStateNormal];
-
+    
+    
+    //    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    //    [audioSession setActive:NO error:nil];
+    //
+    
 }
 
 -(IBAction)editTapped:(id)sender {
@@ -65,6 +79,7 @@
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         UITextField *textField = [alert textFieldAtIndex:0];
         textField.text = dream.name;
+        [textField selectAll:textField.text];
         [alert show];
     
     }
@@ -127,7 +142,7 @@
     
     self = [super initWithStyle:UITableViewStylePlain];
     return self;
-
+    
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
@@ -157,12 +172,17 @@
                                                           timeStyle:NSDateFormatterShortStyle];
     
     NSInteger durationInteger = [dream.duration integerValue];
+
+    //    NSInteger durationInteger = (NSInteger)(dream.audioData.length / 100.0)/(140.0);
+  //  NSInteger durationInteger = (NSInteger)(dream.audioData.length / 13702.0);
+//    NSLog(@"dream data %@ %1d %f %f", dream.name, (long)dream.audioData.length, dream.audioData.length / 100.0, (dream.audioData.length / 100.0)/(140.0) );
+    
     NSInteger seconds = durationInteger % 60;
     NSInteger minutes = (durationInteger / 60) % 60;
     NSInteger hours = (durationInteger / 3600);
     NSString *durationString = [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)hours, (long)minutes, (long)seconds];
     
-    NSLog(@"duration string: %@", durationString);
+//    NSLog(@"duration string: %@", durationString);
     
     NSMutableString *subtitleMutableString = [[NSMutableString alloc]init];
     [subtitleMutableString appendString:dateString];
@@ -183,6 +203,9 @@
     
     dreamIndexPath = indexPath;
     
+    [self playTapped:nil];
+    
+    
 //    NSArray *dreams = [[DreamStore sharedStore]allDreams];
 //    Dream *dream = dreams[dreamIndexPath.row];
     
@@ -202,6 +225,13 @@
 
 - (void)viewDidLoad {
     
+    [super viewDidLoad];
+    
+    beenSelected = false;
+    
+    
+    
+    
     //NSLog(@"loaded for dreams");
     
     //NSLog(@"files contents:");
@@ -214,16 +244,18 @@
     // Set the audio file
     //NSArray *pathComponents = [NSArray arrayWithObjects:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject], @"My.m4a", nil];
     //NSURL *outputFileUrl = [NSURL fileURLWithPathComponents:pathComponents];
+    
+    // DO NOT SET UP ANOTHER AUDIO SESSION :  Set up the audio session
+//    AVAudioSession *session = [AVAudioSession sharedInstance];
+//    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+}
 
-
+-(void) viewWillAppear:(BOOL)animated {
     
-    [super viewDidLoad];
+    [super viewWillAppear:YES];
     
-    beenSelected = false;
-    
-    // Set up the audio session
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [self.tableView reloadData];
     
 }
 
@@ -236,12 +268,14 @@
         [player stop];
         [playButton setTitle:@"Play" forState:UIControlStateNormal];
         
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setActive:NO error:nil];
+        
     }
     
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setActive:NO error:nil];
-    
     beenSelected = false;
+    
+    //    player = nil;
     
 }
 

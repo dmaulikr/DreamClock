@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  RecordViewController.h
 //  DreamClock
 //
 //  Created by Thomas Thornton on 12/1/14.
@@ -10,6 +10,9 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface RecordViewController : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+
+@property (strong, nonatomic) AVAudioRecorder *audioRecorder;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @property (weak, nonatomic) IBOutlet UIButton *recordButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;

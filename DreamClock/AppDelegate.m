@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DreamStore.h"
 #import "DreamsTableViewController.h"
+#import "RecordViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +29,9 @@
     // If notif not set far enough in advance it automatically switches
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     tabBarController.selectedViewController = [tabBarController.viewControllers objectAtIndex:1];
+    
+//    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+//    [[AVAudioSession sharedInstance]setActive:YES error:nil];
     
 }
 
